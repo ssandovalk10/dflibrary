@@ -1,0 +1,10 @@
+<h1>Lista de Empleados por Area</h1>
+
+{{object_list}}
+
+<ul>
+    {%for empleado in object_list%}
+        <li>{{empleado.first_name}} {{empleado.last_name}}</li>
+    {% endfor %}
+
+</ul>
